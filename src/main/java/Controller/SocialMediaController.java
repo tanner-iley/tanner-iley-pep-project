@@ -85,7 +85,8 @@ public class SocialMediaController {
         if (message != null) {
             context.json(message);
         } else {
-            context.status(400);
+            context.result("");
+            context.status(200);
         }
     }
 
@@ -95,7 +96,8 @@ public class SocialMediaController {
         if (deleted != null) {
             context.json(deleted);
         } else {
-            context.status(400);
+            context.result("");
+            context.status(200);
         }
     }
 
